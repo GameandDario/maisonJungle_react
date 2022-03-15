@@ -1,6 +1,8 @@
 import { plantList } from "../datas/plantList";
 import "../styles/ShoppingList.css";
 
+import CareScale from "./CareScale";
+
 function ShoppingList() {
   const categories = plantList.reduce(
     (acc, plant) =>
@@ -22,6 +24,8 @@ function ShoppingList() {
             {/* {plant.isBestSale ? <span>🔥</span> : null} si condition null on peut écrire : */}
 
             {plant.isSpecialOffer && <div className="lmj-sales">Promo</div>}
+            <CareScale careType="water" scaleValue={plant.water} />
+            <CareScale careType="light" scaleValue={plant.light} />
           </li>
         ))}
       </ul>
