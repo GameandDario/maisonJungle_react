@@ -1,5 +1,5 @@
 import "../styles/Banner.css";
-import logo from "../assets/logo.png";
+/* import logo from "../assets/logo.png";
 
 function Banner() {
   const title = "La maison jungle";
@@ -19,6 +19,14 @@ function Banner() {
       {recommandation}
     </div>
   );
+}
+
+export default Banner; */
+
+import "../styles/Banner.css";
+
+function Banner({ children }) {
+  return <div className="lmj-banner">{children}</div>;
 }
 
 export default Banner;
