@@ -2,7 +2,8 @@ import logo from "../assets/logo.png";
 import "../App.css";
 import Banner from "./Banner";
 import Cart from "./Cart";
-import ShoppingList from "./ShoppingList";
+/* import ShoppingList from "./ShoppingList"; */
+import Footer from "./Footer";
 
 function App() {
   const title = "La maison jungle";
@@ -22,7 +23,8 @@ function App() {
         {recommandation}
       </Banner>
       <Cart />
-      <ShoppingList />
+      {/* <ShoppingList /> */}
+      <Footer />
     </div>
   );
 }
